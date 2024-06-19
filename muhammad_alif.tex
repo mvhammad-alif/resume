@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+      {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+  \item\small{
+      {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+{\Huge \scshape Muhammad Alif} \\ \vspace{1pt}
+\end{center}
+\begin{center}
+\small \raisebox{-0.1\height} ~
+\href{tel:+6281513146296}{\raisebox{-0.2\height}\faPhone\  \underline{+6281513146296}} ~
+\href{mailto:mvhammad.alif@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mvhammad.alif@gmail.com}} ~
+\href{https://linkedin.com/in/mvhammad-alif/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/mvhammad-alif}}  ~
+\href{https://github.com/mvhammad-alif}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/mvhammad-alif}}
+\vspace{-8pt}
+\end{center}
+
+\hspace{1pt}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\href{https://ui.ac.id/}{Universitas Indonesia}}{Sep. 2009 -- May 2013}
+{Bachelor of Science in Computer Science (GPA: 3.57)}{Depok, West Java}
+\resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Golang, Python, ReactJS, HTML/CSS, JavaScript, MySQL, PostgreSQL} \\
+\textbf{Technologies/Frameworks}{: Microservices, Kafka, NSQ, RabbitMQ, Linux, Jenkins, GitHub, Docker} \\
+}}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://www.tokopedia.com/}{PT Tokopedia}}{January 2022 -- August 2024}
+{Software Engineer (Backend)}{Jakarta, Indonesia}
+\resumeItemListStart
+\resumeItem{Add company revenue stream by implementing new bill payment channel (Tagihan Listrik, E-Samsat \& Tokopedia card)}
+\resumeItem{Develop bill payment simulator for Tokopedia, which helps a lot in manual testing and integration test, especially for new integrated bill payment channel}
+\resumeItem{Continuous refactoring and managing code repositories in both legacy code and new code}
+\resumeItem{Rewrite monolithic legacy code into microservices using Golang with SOLID principal and proper design pattern}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://www.bridestory.com/}{PT Cerita Bahagia (Bridestory/Parentstory)}}{August 2019 -- December 2021}
+{Senior Software Engineer (Backend)}{Jakarta, Indonesia}
+\resumeItemListStart
+\resumeItem{Provide Backend API for Bridestory and Parentstory mobile \& web content}
+\resumeItem{Implement click ads service for Bridestory, adding new revenue stream for the company}
+\resumeItem{Rewrite monolithic legacy code into microservices using Flask Python framework}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://badr.co.id/}{PT Badr Interactive}}{May 2013 -- August 2019}
+{Full Stack Engineer}{Depok, West Java}
+\resumeItemListStart
+\resumeItem{Involved in multiple project-based web development, written mainly using PHP (CodeIgniter \& Laravel), from e-commerce, company landing page, e-learning, into flight \& travel website}
+\resumeItem{Involved in product development (P2P lending \& e-learning) as a Fullstack engineer which writes codes on backend side (PHP \& python) and frontend side (ReactJS)}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+\end{document}
